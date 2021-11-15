@@ -1,0 +1,59 @@
+/* 
+打飞机游戏界面css样式表
+*/
+
+/* 包裹样式#wrap */
+#wrap{
+    width: 500px;
+    height: 500px;
+    background-color: #ddd;
+    margin: 0 auto;
+    position: relative;
+}
+/* 子弹用样式#wrap div */
+#wrap div{
+    width: 5px;
+    height: 15px;
+    border-radius: 50%;
+    background: #f00;
+    display: inline-block;
+    position: absolute;
+}
+/* 飞船用样式，未击中#wrap span */
+.targetSpan{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+
+}
+/* 子弹未击中样式 */
+.no-boom{
+    background-image: url(../img/target_icon.png);
+}
+/* 子弹击中动画效果样式 */
+@keyframes myboom{
+    from{opacity: 1;}
+    to{opacity: 0;}
+}
+.yes-boom{
+    background-image:url(../img/boom.png);
+    animation: myboom .1s; 
+    animation-fill-mode: forwards;
+    /* display: inline-block;
+    z-index: 100;
+    width: 30px;
+    height: 30px; */
+}
+/* 飞机样式 #wrap img */
+#wrap img{
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    position: absolute;
+    background-image: url(../img/airBg.png);
+    background-repeat: no-repeat;
+    background-size:100% 100%;
+    background-position:center;
+}
