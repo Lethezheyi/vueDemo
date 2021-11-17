@@ -11,7 +11,7 @@ CSS3
 
 javascript高级设计-原型模式
 
-# booszp2
+# v2-booszp2
 高仿boss直聘，采用vue-cli + vant 编写，用来熟悉vue2的初步使用方法。
 
 技术栈：
