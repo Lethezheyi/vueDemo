@@ -26,6 +26,7 @@
 </template>
 
 <script>
+import axios from 'axios'
 export default{
     name:'searchPage',
     data(){
@@ -45,12 +46,20 @@ export default{
             }
         }
     },
+    // vue生命周期created,在页面所有内容生成完毕后执行
+    created(){
+        axios.get('http://localhost:3344/aaa')
+                    .then(_d=>{
+                        console.log(_d.data);
+                    })
+    },
     methods:{
         // 清空查询框按钮点击事件
         cancelSearchBtnFn(){
             this.value='';
             this.is_cancelIconShow=false;
-        }
+        },
+        
     },
 }
 </script>
