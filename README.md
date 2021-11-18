@@ -41,3 +41,7 @@ mysql
 ajax
 
 vue
+
+## 1-5节
+
+主要针对移动端适配、vant库的使用、router配置、watch监听部分的使用；
