@@ -21,3 +21,23 @@ CSS3
 Vue
 Vant
 Vue-cli
+
+# v2-wangyiyanxuan
+
+网易严选demo，
+
+技术栈
+
+html 
+
+css 
+
+rem页面布局 
+
+node
+
+mysql
+
+ajax
+
+vue

@@ -1,0 +1,28 @@
+/* 自定义vant部分样式 */
+
+
+/* 针对index_joblist组件重置vant navbar组件背景颜色 */
+.index_joblist_wrap .van-nav-bar__content{
+    background-color: #05b0be;
+}
+
+/* 针对index_joblist组件重置left-text 和 right-text颜色 */
+.index_joblist_wrap .van-nav-bar__content .van-nav-bar__text,
+.index_joblist_wrap .van-nav-bar__content .van-nav-bar__right .van-icon{
+    color: #fff;
+}
+
+/* 针对filterWrapObj筛选组件重置vant grid组件的颜色 */
+.filterWrap .van-grid-item .van-grid-item__content{
+    background: #05b0be;
+}
+.filterWrap .van-grid-item .van-grid-item__content .van-grid-item__text{
+    color: #fff;
+}
+.filterWrap .van-grid-item .van-grid-item__focus{
+    border: 1px solid #14c1bb;
+    background: #def6f6;
+}
+.filterWrap .van-grid-item .van-grid-item__focus .van-grid-item__text{
+    color: #000;
+}
