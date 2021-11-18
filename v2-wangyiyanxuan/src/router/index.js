@@ -1,15 +1,21 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import HelloWorld from '../components/HelloWorld'
+import indexWrap from '@/components/indexWrap'
+import searchPage from '@/components/searchPage'
 
 Vue.use(VueRouter)
 
 const routes = [
   {
     path: '/',
-    name: 'HelloWorld',
-    component: HelloWorld
+    name: 'indexWrap',
+    component: indexWrap
   },
+  {
+    path:'/searchPage',
+    name:'searchPage',
+    component:searchPage
+  }
   // {
   //   path: '/about',
   //   name: 'About',

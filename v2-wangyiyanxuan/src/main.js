@@ -1,11 +1,13 @@
+import './assets/reset.css'
+import './assets/rem'
 import Vue from 'vue'
 import App from './App.vue'
 import router from './router'
 import store from './store'
 
-import { Button} from 'vant'
+import { Button,Col, Row,Icon,Field,Cell, CellGroup } from 'vant'
 
-Vue.use(Button);
+Vue.use(Button).use(Col).use(Row).use(Icon).use(Field).use(Cell).use(CellGroup);
 Vue.config.productionTip = false
 
 
