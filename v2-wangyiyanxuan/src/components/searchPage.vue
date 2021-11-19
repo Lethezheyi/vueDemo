@@ -8,6 +8,7 @@
                         <van-field 
                         v-model="value" 
                         placeholder="至臻·虚空之女" 
+                        @keyup.enter='submitFn'
                         class="searchField"/>
                         <van-icon name="search" class="searchIcon"/>
                         <van-icon 
@@ -22,6 +23,7 @@
                 <van-button type="primary" class="cancelBtnCls" to="/">取消</van-button>
             </van-col>
         </van-row>   
+
     </div>
 </template>
 
@@ -48,10 +50,10 @@ export default{
     },
     // vue生命周期created,在页面所有内容生成完毕后执行
     created(){
-        axios.get('http://localhost:3344/aaa')
-                    .then(_d=>{
-                        console.log(_d.data);
-                    })
+        // axios.get('http://localhost:3344/aaa')
+        //             .then(_d=>{
+        //                 console.log(_d.data);
+        //             });
     },
     methods:{
         // 清空查询框按钮点击事件
@@ -59,6 +61,18 @@ export default{
             this.value='';
             this.is_cancelIconShow=false;
         },
+        // enter事件响应
+        submitFn(){
+            axios.get('http://localhost:3344/search',{
+                params:{
+                    searchKey:this.value
+                }
+            })
+            .then(_d=>{
+                console.log(_d.data);
+            });
+            // console.log(this.value);
+        }
         
     },
 }

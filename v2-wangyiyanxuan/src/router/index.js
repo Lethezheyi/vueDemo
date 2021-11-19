@@ -2,6 +2,8 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 import indexWrap from '@/components/indexWrap'
 import searchPage from '@/components/searchPage'
+import cateList from '@/components/cateList'
+import list from '@/components/list'
 
 Vue.use(VueRouter)
 
@@ -15,6 +17,15 @@ const routes = [
     path:'/searchPage',
     name:'searchPage',
     component:searchPage
+  },{
+    path:'/cateList',
+    name:'cateList',
+    component:cateList
+  },
+  {
+    path:'/list',
+    name:'list',
+    component:list
   }
   // {
   //   path: '/about',

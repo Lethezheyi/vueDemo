@@ -1,0 +1,136 @@
+/* 
+重置vant样式文件
+*/
+
+/* indexWrap组件导航栏添加外底边距 */
+ .title_div .van-row--justify-center{
+    margin-bottom: .5rem;
+}
+/* 更改tabWrap高度 */
+.tabWrap .van-tabs__nav--line{
+    height: .8rem;
+}
+.tabWrap .van-tab__text--ellipsis{
+    font-size: .4rem;
+    height: .8rem;
+    line-height: .6rem;
+}
+.tabWrap .van-tabs--line .van-tabs__wrap{
+    height: 0.8rem;
+}
+/* 更改grid组件的样式 */
+
+.goodsColumn_Wrap .goodsColumn_item .van-icon__image{
+    width: 2rem;
+    height: 1.47rem;
+    object-fit: contain;
+}
+.goodsColumn_Wrap .goodsColumn_item .van-grid-item__text{
+    color: #646566;
+    font-size: .32rem;
+    line-height: 1.5;
+    word-break: break-all;
+}
+
+/* 限时购CountDown组件 */
+
+.countDownWrap .van-count-down{
+    font-size: .37rem;
+    display: inline-block;
+    position: absolute;
+    top: .56rem;
+    margin-left: .3rem;
+}
+.countDownWrap .van-count-down .block {
+    display: inline-block;
+    width: .6rem;
+    color: #fff;
+    height: .6rem;
+    font-size: .37rem;
+    text-align: center;
+    background-color: #ee0a24;
+    line-height: .6rem;
+    border-radius: .05rem;
+}
+/* 限时购产品展示样式 */
+.countDownProductWrap .van-grid-item__content{
+    /* background: #f5f5f5; */
+
+}
+.countDownProductWrap i{
+    background: #f5f5f5;
+    padding: 0 .6rem;
+}
+
+/* 底部标签栏 */
+.footer_div{
+    height: 1rem;
+}
+.footer_div .van-tabbar-item__icon{
+    font-size: .4rem;
+}
+.footer_div .van-tabbar-item{
+    font-size: .32rem;
+}
+.footer_div .van-tabbar{
+    height: 1rem;
+}
+
+/* cateListSliderBar 分类页侧边导航样式 */
+.cateListSliderBar{
+    float: left;
+}
+.cateListSidebar .van-sidebar{
+    width: 2.2rem;
+}
+.van-sidebar .van-sidebar-item{
+    font-size: .3733rem;
+    line-height: .8rem;
+    height: 1.2rem;
+    padding-left: .36rem;
+}
+.cateListSidebar .van-sidebar-item--select::before {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: .1rem;
+    height: .8rem;
+    background-color: #ee0a24;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    content: '';
+    /* line-height: 0.2rem; */
+    margin-top: .05rem;
+}
+/* cateList右侧轮播图样式 */
+.productListWrap .van-swipe{
+    padding: .3rem;
+    height: 3rem;
+}
+.productListWrap .van-grid{
+    padding: 0 .2rem 0 0rem;
+    position: absolute;
+    left: 2.4rem;
+    top: 3rem;
+}
+/* cateList右侧产品宫格样式 */
+.productListWrap .van-grid-item__icon{
+    font-size: 2rem;
+}
+.productListWrap .van-grid-item__text{
+    color: #646566;
+    font-size: .36rem;
+    line-height: 1.5;
+    word-break: break-all;
+}
+
+/* list组件tab标签样式 */
+.listTitleTab .van-tab{
+    font-size: .42rem;
+}
+.listTitleTab .van-tabs__wrap{
+    height: 1rem;
+}
+.listTitleTab .van-tab__text--ellipsis{
+    padding: .6rem 0;
+}
