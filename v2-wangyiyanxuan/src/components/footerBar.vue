@@ -60,7 +60,7 @@ export default{
                     a: 'footerIcon footerIcon_5',
                     a1: 'footerIcon footerIcon_5_red'
                     },
-                pageRoute:'/u'
+                pageRoute:'/login'
                 }
             ]
         }

@@ -68,7 +68,104 @@ app.get('/get_swipe_img',(req,res)=>{
     res.send(_n);
 })
 
-// 必买清单数据接口
+// cateList组件默认数据接口
+app.get('/cateList_default_list',(req,res)=>{
+    // console.log(req.query.index);
+    let _n = [
+        {
+            img:'https://yanxuan.nosdn.127.net/30a3eaeaa8b7955dc2a151d1345a4b1f.png',
+            txt:'必买清单'
+        },
+        {
+            img:'https://yanxuan.nosdn.127.net/2fe45c20ef65a05755588f28c048a39c.png',
+            txt:'新品速递'
+        },
+        {
+            img:'https://yanxuan.nosdn.127.net/076a28810809721a782d4de715624f37.png',
+            txt:'换季清仓'
+        },
+    ]
+    res.send(_n);
+})
+// cateList组件根据点击选择不同的数据接口
+app.get('/cateList_other_list',(req,res)=>{
+    let _inx = req.query.index;
+    // console.log(req.query.index);
+    let _n = [
+        [
+            {
+                div_txt:'床品件套',
+                img_detail:[{
+                    img:'https://yanxuan.nosdn.127.net/ed6400e5be573e1524cdef0b5c9e462d.png',
+                    img_txt:'床品件套'
+                }]
+            },
+            {
+                div_txt:'被枕褥毯',
+                img_detail:[{
+                    img:'https://yanxuan.nosdn.127.net/ed6400e5be573e1524cdef0b5c9e462d.png',
+                    img_txt:'被枕褥毯'
+                },{
+                    img:'https://yanxuan.nosdn.127.net/b91e14afc5a138df8dbc3236146d24e6.png',
+                    img_txt:'床垫床褥'
+                },]
+            },
+            {
+                div_txt:'卧室家具',
+                img_detail:[{
+                    img:'https://yanxuan.nosdn.127.net/29a60124243be40301a571e09f8c935c.png',
+                    img_txt:'卧室家具'
+                },{
+                    img:'https://yanxuan.nosdn.127.net/9bc4cae742e2b2709974ad074f897493.png',
+                    img_txt:'灯具'
+                },{
+                    img:'https://yanxuan.nosdn.127.net/becde30fadf4ec335cd7ad8078798acf.png',
+                    img_txt:'小件家具'
+                },{
+                    img:'https://yanxuan.nosdn.127.net/28179231bfca5100b8efc2b55daa4d64.png',
+                    img_txt:'北欧原木'
+                }]
+            },
+        ],[
+            {
+                div_txt:'居家内搭',
+                img_detail:[{
+                    img:'https://yanxuan.nosdn.127.net/68e6cc39b25f99e6a093a87046db0a91.png',
+                    img_txt:'女式家居服'
+                }]
+            },
+            {
+                div_txt:'男装',
+                img_detail:[{
+                    img:'https://yanxuan.nosdn.127.net/b0692e7ecf8f37a6eabb2618dae55307.png',
+                    img_txt:'男式衬衫'
+                },{
+                    img:'https://yanxuan.nosdn.127.net/5531f4735349efaca26a7312bc6fead3.png',
+                    img_txt:'男士牛仔裤'
+                },]
+            },
+            {
+                div_txt:'女装',
+                img_detail:[{
+                    img:'https://yanxuan.nosdn.127.net/2b9cd686ac178327115648fdcf3bd8b1.png',
+                    img_txt:'女式毛衫'
+                },{
+                    img:'https://yanxuan.nosdn.127.net/52f93f17ed5e781fe3eff15ea8b03d6a.png',
+                    img_txt:'女式外套'
+                },{
+                    img:'https://yanxuan.nosdn.127.net/21639ee3343c32055ab4c885bb63aa86.png',
+                    img_txt:'女式裤装'
+                },{
+                    img:'https://yanxuan.nosdn.127.net/cf637619671e8029900087a162a69efa.png',
+                    img_txt:'女式西装'
+                }]
+            },
+        ]
+    ]
+    res.send(_n[_inx-1]);
+})
+
+// list组件必买清单数据接口
 app.get('/cate_goods_list_0',(req,res)=>{
     let _d = [{
         goods_img:'https://yanxuan-item.nosdn.127.net/b14f4581176318d1a646640cc952ee02.png',
