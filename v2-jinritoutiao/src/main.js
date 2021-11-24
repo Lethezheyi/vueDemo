@@ -5,10 +5,13 @@ import Vue from 'vue'
 import App from './App.vue'
 import router from './router'
 import store from './store'
-import {Button,Search,Icon,Tab, Tabs,Tabbar, TabbarItem  } from 'vant'
+import axios from 'axios'
+import {Button,Search,Icon,Tab, Tabs,Tabbar, TabbarItem,Sticky  } from 'vant'
+
+axios.defaults.baseURL = '/api';
 
 Vue.use(Button).use(Search).use(Icon)
-.use(Tab).use(Tabs).use(Tabbar).use(TabbarItem);
+.use(Tab).use(Tabs).use(Tabbar).use(TabbarItem).use(Sticky);
 Vue.config.productionTip = false
 
 new Vue({

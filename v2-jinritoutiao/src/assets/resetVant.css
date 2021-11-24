@@ -30,3 +30,20 @@
 .tabWrap .van-tab{
     font-size: .46rem;
 }
+/* vant-tabbar组件 components-footerCpt组件 */
+.footerCptWrap .van-tabbar{
+    height:1.2rem;
+}
+.footerCptWrap .van-icon{
+    font-size: .42rem;
+}
+.footerCptWrap .van-tabbar-item{
+    font-size: .36rem;
+}
+/* components-videoPage页面，按钮样式重置 */
+.videoFooter .van-button--normal{
+    padding: 0 0.687633rem;
+}
+.videoFooter .van-button__icon{
+    font-size: .36rem;
+}

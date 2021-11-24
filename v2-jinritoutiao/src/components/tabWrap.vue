@@ -20,13 +20,12 @@ export default{
             tabValue:[]
         }
     },
-    props:["titleTxt"],
     created(){
         // console.log("xxx");
         axios.get("http://localhost:3344/tab_title")
                 .then(_d=>{
                     // console.log(_d.data);
-                    this.tabValue = this.titleTxt;
+                this.tabValue = _d.data;
                 })
     }
 }

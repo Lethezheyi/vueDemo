@@ -4,6 +4,10 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+    <!-- 解决403错误的代码,403错误，是因为服务器端收到了你的请求，你的请求默认是会发送你设备的型号的，当你的设备型号不满足服务器的要求时（服务器要求是手机，你是浏览器），服务器将不会处理你的请求，它默认把你的设备端当成爬虫了，我们为了能够成功访问到资源，可以隐藏请求头的设备信息，使用no-referrer即可-->
+    <meta name="referrer" content="no-referrer">
+
     <link rel="icon" href="<%= BASE_URL %>favicon.ico">
     <title><%= htmlWebpackPlugin.options.title %></title>
   </head>

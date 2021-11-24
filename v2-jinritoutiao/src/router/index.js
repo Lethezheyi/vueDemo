@@ -1,6 +1,9 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import index from '@/components/index'
+import videoPage from '@/components/videoPage'
+import screeningRoom from '@/components/screeningRoom'
+import mine from '@/components/mine'
 
 Vue.use(VueRouter)
 
@@ -9,6 +12,21 @@ const routes = [
     path: '/',
     name: 'index',
     component: index
+  },
+  {
+    path: '/videoPage',
+    name: 'videoPage',
+    component: videoPage
+  },
+  {
+    path: '/screeningRoom',
+    name: 'screeningRoom',
+    component: screeningRoom
+  },
+  {
+    path: '/mine',
+    name: 'mine',
+    component: mine
   }
   // {
   //   path: '/about',

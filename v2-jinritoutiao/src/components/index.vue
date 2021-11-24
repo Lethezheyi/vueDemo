@@ -1,13 +1,16 @@
 <template>
   <div class="indexWrap">
     <!-- 导航栏 -->
-    <headerCpt ></headerCpt>
-    <!-- 标签栏 -->
-    <tabWrap :titleTxt="titleBarValue"></tabWrap>
+    <van-sticky>
+      <headerCpt></headerCpt>
+      <!-- 标签栏 -->
+      <tabWrap></tabWrap>
+    </van-sticky>
     <!-- list列表栏 -->
     <listWrap></listWrap>
     <!-- 底部导航栏 -->
     <footerCpt></footerCpt>
+    
   </div>
     
 </template>
@@ -38,14 +41,21 @@ export default {
       function getArticleValueFn(){
         return axios.get("http://localhost:3344/list_detail");
       }
+      function getBiliBiliDingFn(){
+        // https://www.bilibili.com/index/ding.json
+        return axios.get('/index/ding.json')
+      }
       // 编写并发请求
-      axios.all([getTabVauleFn(),getArticleValueFn()])
+      // axios.all([getTabVauleFn(),getArticleValueFn()])
+      axios.all([getTabVauleFn(),getArticleValueFn(),getBiliBiliDingFn()])
               .then(results=>{
                 // 返回一个数组
-                // console.log(results);
+                // console.log(results[2]);
                 this.titleBarValue = results[0].data;
+                // console.log(this.titleBarValue);
                 this.atricleValue = results[1].data;
               })
+      // 请求B站数据接口,直接请求会提示跨域错误，需要使用代理服务器
     },
     methods: {
         // 查询按钮点击事件
