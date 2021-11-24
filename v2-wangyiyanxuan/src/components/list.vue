@@ -72,7 +72,8 @@ export default{
         },
         // 返回首页点击按钮
         gotoIndexBtn(){
-            this.$router.push('/')
+            localStorage.setItem('save_inx',0);
+            this.$router.push('/');
         }
     },
     computed:{

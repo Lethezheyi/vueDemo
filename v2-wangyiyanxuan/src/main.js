@@ -11,7 +11,7 @@ import { Button,Col, Row,Icon,Field,
   SwipeItem,Grid, GridItem,CountDown,
   Tabbar, TabbarItem,Sidebar, SidebarItem,
   Sticky,GoodsAction, GoodsActionIcon, GoodsActionButton,
-  Sku,Uploader    } from 'vant'
+  Sku,Uploader,Form,Dialog  } from 'vant'
 
 Vue.use(Button).use(Col).use(Row).use(Icon)
 .use(Field).use(Cell).use(CellGroup).use(Tab)
@@ -19,7 +19,8 @@ Vue.use(Button).use(Col).use(Row).use(Icon)
 .use(GridItem).use(CountDown).use(Tabbar)
 .use(TabbarItem).use(Sidebar).use(SidebarItem)
 .use(Sticky).use(GoodsAction).use(GoodsActionIcon)
-.use(GoodsActionButton).use(Sku).use(Uploader);
+.use(GoodsActionButton).use(Sku).use(Uploader)
+.use(Form).use(Dialog);
 Vue.config.productionTip = false
 
 

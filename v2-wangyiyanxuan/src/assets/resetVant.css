@@ -254,3 +254,35 @@
     padding: .2rem .2rem;
     font-size: .37rem;
 }
+/* vant-form表单组件 components-login组件 */
+.loginCpt{
+    margin: 0 auto;
+}
+.loginCpt .van-form{
+    /* padding-top: 3rem; */
+    position: absolute;
+    top: 3rem;
+}
+.loginCpt .van-form .van-cell{
+    font-size: .46rem;
+    height: 1rem;
+}
+.loginCpt .van-button--block{
+    top: 0 !important;
+}
+.loginCpt .van-field__error-message{
+    font-size: .32rem;
+}
+/* dialog弹窗样式 */
+.van-dialog{
+    height: 2.4rem;
+    width: 5rem;
+}
+.van-dialog__message{
+    font-size: .36rem;
+    line-height: .6rem;
+}
+.van-dialog__footer .van-button{
+    font-size: .36rem;
+    padding-bottom: .2rem;
+}

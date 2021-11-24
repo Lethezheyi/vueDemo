@@ -1,0 +1,32 @@
+/* 
+重置vant默认样式文件
+*/
+
+/* vant-search组件 components-headerCpt组件 */
+.headerCptWrap .van-cell{
+    font-size: .46rem;
+    margin: .2rem .1rem;
+}
+.headerCptWrap .van-field__left-icon .van-icon, .van-field__right-icon .van-icon{
+    font-size: .46rem;
+    margin-top: .12rem;
+}
+.headerCptWrap .van-search__action{
+    font-size: .56rem;
+    color: #fff;
+}
+.headerCptWrap .van-search{
+    padding: .2rem 0.16rem;
+}
+.headerCptWrap span{
+    display: block;
+    margin-top: 0.1rem;
+    font-size: .33rem;
+}
+/* vant-tab组件 components-tabWrap组件 */
+.tabWrap .van-tabs--line .van-tabs__wrap{
+    height: 1rem;
+}
+.tabWrap .van-tab{
+    font-size: .46rem;
+}

@@ -196,6 +196,7 @@ export default{
     methods:{
         // 导航栏返回主页面点击按钮
         gotoIndexBtn(){
+            localStorage.setItem('save_inx',0);
             this.$router.push('/')
         },
         // 加入购物车点击按钮

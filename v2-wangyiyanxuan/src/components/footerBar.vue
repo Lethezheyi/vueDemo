@@ -80,7 +80,7 @@ export default{
         // 底部标签栏点击事件
         onFooterBarBtnFn(_inx){
             // 使用html5的localStorage保存索引，保存后，_inx的类型会从Number变成string
-            // console.log(_inx);
+            console.log(_inx);
             // console.log(typeof _inx);
             localStorage.setItem('save_inx',_inx);
         }
